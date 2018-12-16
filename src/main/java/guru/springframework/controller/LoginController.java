@@ -23,13 +23,13 @@ public class LoginController {
 		return "loginform";
 	}
 	
-	@RequestMapping("/logout-success")
+	@RequestMapping("logout-success")
 	private String yourLoggedOut() {
 		return "logout-success";
 
 	}
 	
-	@PostMapping("/dologin")
+	//@PostMapping("/dologin")
 	public String doLogin(@Valid LoginCommand loginCommand, BindingResult bindingResult) {
 		
 		if(bindingResult.hasErrors()){
