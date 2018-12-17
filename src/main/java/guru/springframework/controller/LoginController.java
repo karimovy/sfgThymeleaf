@@ -19,19 +19,19 @@ public class LoginController {
 
     @RequestMapping("/login")
     public String showLoginForm(Model model){
-
+    	System.out.println("test Login ============================ AAA");
         model.addAttribute("loginCommand", new LoginCommand());
-
+        System.out.println("test Login ============================ BBB");
         return "loginform";
     }
 
-    @RequestMapping("logout-success")
+    @RequestMapping("/logout-success")
     public String yourLoggedOut(){
 
         return "logout-success";
     }
 
-    @RequestMapping(value = "/dologin", method = RequestMethod.POST)
+    //@RequestMapping(value = "/dologin", method = RequestMethod.POST)
     public String doLogin(@Valid LoginCommand loginCommand, BindingResult bindingResult){
 System.out.println("test AAAAAAAAAAAAAAAAAAAAAAAA");
         if(bindingResult.hasErrors()){
