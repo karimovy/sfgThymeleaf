@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import guru.springframework.comands.CheckoutCommand;
 
 @Controller
-@RequestMapping("/thymeleaf")
 public class CheckoutController {
 
 	@RequestMapping("/checkout")

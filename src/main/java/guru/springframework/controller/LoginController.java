@@ -14,7 +14,6 @@ import javax.validation.Valid;
  * Created by jt on 2/2/16.
  */
 @Controller
-@RequestMapping("/thymeleaf")
 public class LoginController {
 
     @RequestMapping("/login")
@@ -38,6 +37,6 @@ System.out.println("test AAAAAAAAAAAAAAAAAAAAAAAA");
             return "loginform";
         }
 
-        return "redirect:/thymeleaf/";
+        return "redirect:/";
     }
 }

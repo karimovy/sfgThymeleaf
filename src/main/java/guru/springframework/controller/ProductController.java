@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import guru.springframework.services.ProductService;
 
 @Controller
-@RequestMapping("/thymeleaf")
 public class ProductController {
 	private ProductService productService;
 	
@@ -20,7 +19,7 @@ public class ProductController {
 	
 	@RequestMapping("/product")
 	public String getProduct() {
-		return "redirect:/thymeleaf/";
+		return "redirect:/";
 	}
 	
 	@RequestMapping("/product/{id}")

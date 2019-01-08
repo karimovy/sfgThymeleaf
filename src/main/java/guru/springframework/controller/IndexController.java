@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import guru.springframework.services.ProductService;
 
 @Controller
-@RequestMapping("/thymeleaf")
 public class IndexController {
 
 	private ProductService productService;
@@ -27,7 +26,6 @@ public class IndexController {
 
 	@RequestMapping("/secured")
 	public String secured() {
-		
 		return "secured";
 	}
 
